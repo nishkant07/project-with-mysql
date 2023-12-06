@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+    background-color: rgb(218, 139, 218);
+}
+h1{
+    color:blue;
+}
+button{
+    background-color: rgb(167, 224, 167);
+    scale: 1.5;
+    color: blue;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+table,td,th,tr{
+    
+    border: 2px solid white;
+}

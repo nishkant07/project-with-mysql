@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add new</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>add new user</h1>
+    <br>
+    <h2>ID</h2>
+    <h3><%= newusrid %></h3>
+    <form method="post" action="/users/new">
+        <label for="username">USERNAME</label><br>
+        <input type="text" name="username" placeholder="enter username"><br><br>
+        <label for="email">EMAIL</label><br>
+        <input type="text" name="email" placeholder="enter email"><br><br>
+        <label for="password">PASSWORD</label><br>
+        <input type="password" name="password" placeholder="enter password"><br><br>
+        <button>Add</button>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>edit your username</h1>
+    <h2>id:<%= result[0].id %></h2>
+    <h2>email:<%= result[0].email %></h2>
+    <form method="post" action="/users/<%= result[0].id %>?_method=PATCH">
+        <label for="username">USERNAME</label><br>
+        <input type="text" name="username" placeholder="<%= result[0].username %>"><br><br>
+        <label for="password">password for confirmation</label><br>
+        <input type="password" name="password" placeholder="enter your passcode"><br><br>
+        <button>submit</button>
+    </form>
+    
+    
+</body>
+</html>
